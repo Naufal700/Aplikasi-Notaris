@@ -1,0 +1,29 @@
+/* Hover highlight modern */
+.menu-inner .menu-item.active > .menu-link,
+.menu-inner .menu-item:hover > .menu-link {
+  background-color: #7367f0;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Arrow rotate on open submenu */
+.menu-item.open > .menu-link .menu-arrow {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+/* Badge small and modern */
+.menu-link .badge {
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+/* Smooth submenu animation */
+.menu-inner .menu-item .menu-toggle + ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.menu-inner .menu-item.open .menu-toggle + ul {
+  max-height: 500px; /* adjust based on submenu length */
+}

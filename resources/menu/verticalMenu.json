@@ -1,0 +1,379 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ri-dashboard-line",
+      "slug": "dashboard"
+    },
+    {
+      "name": "Master Data",
+      "icon": "menu-icon tf-icons ri-database-2-line",
+      "slug": "master-data",
+      "submenu": [
+        {
+          "url": "master/klien",
+          "name": "Data Klien",
+          "slug": "klien.index"
+        },
+        {
+          "url": "master/kontak",
+          "name": "Kontak & Pihak Terkait",
+          "slug": "kontak.index"
+        },
+        {
+          "url": "master/jenis-akta",
+          "name": "Jenis Akta",
+          "slug": "jenis_akta.index"
+        },
+        {
+          "url": "master-data/template",
+          "name": "Template Dokumen",
+          "slug": "master-template"
+        },
+        {
+          "url": "master-data/staf",
+          "name": "Data Staf / Notaris",
+          "slug": "master-staf"
+        }
+      ]
+    },
+    {
+      "name": "Order / Permohonan",
+      "icon": "menu-icon tf-icons ri-file-list-3-line",
+      "slug": "order",
+      "submenu": [
+        {
+          "url": "order/list",
+          "name": "Daftar Order",
+          "slug": "order-list"
+        },
+        {
+          "url": "order/buat",
+          "name": "Buat Order Baru",
+          "slug": "order-buat"
+        },
+        {
+          "url": "order/arsip",
+          "name": "Arsip Order",
+          "slug": "order-arsip"
+        }
+      ]
+    },
+    {
+      "name": "Monitoring Proses",
+      "icon": "menu-icon tf-icons ri-eye-line",
+      "slug": "monitoring",
+      "submenu": [
+        {
+          "url": "monitoring/akta",
+          "name": "Proses Akta",
+          "slug": "monitoring-akta"
+        },
+        {
+          "url": "monitoring/pembayaran",
+          "name": "Proses Pembayaran",
+          "slug": "monitoring-pembayaran"
+        },
+        {
+          "url": "monitoring/jadwal",
+          "name": "Jadwal & Reminder",
+          "slug": "monitoring-jadwal"
+        }
+      ]
+    },
+    {
+      "name": "Akta & Dokumen",
+      "icon": "menu-icon tf-icons ri-file-text-line",
+      "slug": "akta",
+      "submenu": [
+        {
+          "url": "akta/perusahaan",
+          "name": "Akta Perusahaan",
+          "slug": "akta-perusahaan",
+          "submenu": [
+            {
+              "url": "akta/perusahaan/tambah",
+              "name": "Tambah Akta",
+              "slug": "akta-perusahaan-tambah"
+            },
+            {
+              "url": "akta/perusahaan/list",
+              "name": "Daftar Akta",
+              "slug": "akta-perusahaan-list"
+            },
+            {
+              "url": "akta/perusahaan/arsip",
+              "name": "Arsip Akta",
+              "slug": "akta-perusahaan-arsip"
+            }
+          ]
+        },
+        {
+          "url": "akta/perorangan",
+          "name": "Akta Perorangan",
+          "slug": "akta-perorangan",
+          "submenu": [
+            {
+              "url": "akta/perorangan/tambah",
+              "name": "Tambah Akta",
+              "slug": "akta-perorangan-tambah"
+            },
+            {
+              "url": "akta/perorangan/list",
+              "name": "Daftar Akta",
+              "slug": "akta-perorangan-list"
+            },
+            {
+              "url": "akta/perorangan/arsip",
+              "name": "Arsip Akta",
+              "slug": "akta-perorangan-arsip"
+            }
+          ]
+        },
+        {
+          "url": "akta/template",
+          "name": "Template Dokumen",
+          "slug": "akta-template"
+        }
+      ]
+    },
+    {
+      "name": "Surat Masuk / Keluar",
+      "icon": "menu-icon tf-icons ri-mail-line",
+      "slug": "surat",
+      "submenu": [
+        {
+          "url": "surat/masuk",
+          "name": "Surat Masuk",
+          "slug": "surat-masuk"
+        },
+        {
+          "url": "surat/keluar",
+          "name": "Surat Keluar",
+          "slug": "surat-keluar"
+        },
+        {
+          "url": "surat/arsip",
+          "name": "Arsip Surat",
+          "slug": "surat-arsip"
+        }
+      ]
+    },
+    {
+      "name": "Sisminbakum",
+      "icon": "menu-icon tf-icons ri-government-line",
+      "slug": "sisminbakum",
+      "submenu": [
+        {
+          "url": "sisminbakum/list",
+          "name": "Daftar Pendaftaran",
+          "slug": "sisminbakum-list"
+        },
+        {
+          "url": "sisminbakum/registrasi",
+          "name": "Registrasi Akta",
+          "slug": "sisminbakum-registrasi"
+        }
+      ]
+    },
+    {
+      "name": "Billing & Tagihan",
+      "icon": "menu-icon tf-icons ri-wallet-line",
+      "slug": "billing",
+      "submenu": [
+        {
+          "url": "billing/list",
+          "name": "Daftar Tagihan",
+          "slug": "billing-list"
+        },
+        {
+          "url": "billing/buat",
+          "name": "Buat Tagihan",
+          "slug": "billing-buat"
+        },
+        {
+          "url": "billing/pembayaran",
+          "name": "Pembayaran Masuk",
+          "slug": "billing-pembayaran"
+        }
+      ]
+    },
+    {
+      "name": "Keuangan",
+      "icon": "menu-icon tf-icons ri-bank-line",
+      "slug": "keuangan",
+      "submenu": [
+        {
+          "url": "keuangan/master-coa",
+          "name": "Master COA",
+          "slug": "keuangan-master-coa"
+        },
+        {
+          "url": "keuangan/mapping-jurnal",
+          "name": "Mapping Jurnal",
+          "slug": "keuangan-mapping-jurnal"
+        },
+        {
+          "url": "keuangan/jurnal",
+          "name": "Jurnal Umum",
+          "slug": "keuangan-jurnal"
+        },
+        {
+          "url": "keuangan/buku-besar",
+          "name": "Buku Besar",
+          "slug": "keuangan-buku-besar"
+        },
+        {
+          "url": "keuangan/kas-bank",
+          "name": "Kas & Bank",
+          "slug": "keuangan-kas-bank"
+        },
+        {
+          "url": "keuangan/piutang",
+          "name": "Piutang",
+          "slug": "keuangan-piutang"
+        },
+        {
+          "url": "keuangan/hutang",
+          "name": "Hutang",
+          "slug": "keuangan-hutang"
+        },
+        {
+          "url": "keuangan/rekonsiliasi-bank",
+          "name": "Rekonsiliasi Bank",
+          "slug": "keuangan-rekonsiliasi"
+        },
+        {
+          "url": "keuangan/laporan",
+          "name": "Laporan Keuangan",
+          "slug": "keuangan-laporan"
+        }
+      ]
+    },
+    {
+      "name": "e-Filing",
+      "icon": "menu-icon tf-icons ri-file-copy-2-line",
+      "slug": "efiling",
+      "submenu": [
+        {
+          "url": "efiling/ppn",
+          "name": "PPN",
+          "slug": "efiling-ppn"
+        },
+        {
+          "url": "efiling/penghasilan",
+          "name": "PPh",
+          "slug": "efiling-pph"
+        },
+        {
+          "url": "efiling/laporan",
+          "name": "Laporan Pajak",
+          "slug": "efiling-laporan"
+        }
+      ]
+    },
+    {
+      "name": "Notifikasi & Reminder",
+      "icon": "menu-icon tf-icons ri-notification-line",
+      "slug": "notifikasi",
+      "submenu": [
+        {
+          "url": "notifikasi/list",
+          "name": "Daftar Notifikasi",
+          "slug": "notifikasi-list"
+        },
+        {
+          "url": "notifikasi/reminder",
+          "name": "Reminder & Alert",
+          "slug": "notifikasi-reminder"
+        }
+      ]
+    },
+    {
+      "name": "Laporan & Statistik",
+      "icon": "menu-icon tf-icons ri-bar-chart-line",
+      "slug": "laporan",
+      "submenu": [
+        {
+          "url": "laporan/klien",
+          "name": "Laporan Klien",
+          "slug": "laporan-klien"
+        },
+        {
+          "url": "laporan/akta",
+          "name": "Laporan Akta",
+          "slug": "laporan-akta"
+        },
+        {
+          "url": "laporan/billing",
+          "name": "Laporan Billing",
+          "slug": "laporan-billing"
+        },
+        {
+          "url": "laporan/keuangan",
+          "name": "Laporan Keuangan",
+          "slug": "laporan-keuangan"
+        },
+        {
+          "url": "laporan/pajak",
+          "name": "Laporan Pajak",
+          "slug": "laporan-pajak"
+        }
+      ]
+    },
+    {
+      "name": "Pengaturan & Manajemen",
+      "icon": "menu-icon tf-icons ri-settings-3-line",
+      "slug": "pengaturan",
+      "submenu": [
+        {
+          "url": "pengaturan/user",
+          "name": "Manajemen User",
+          "slug": "pengaturan-user"
+        },
+        {
+          "url": "pengaturan/role",
+          "name": "Hak Akses / Role",
+          "slug": "pengaturan-role"
+        },
+        {
+          "url": "pengaturan/profil",
+          "name": "Profil Notaris",
+          "slug": "pengaturan-profil"
+        },
+        {
+          "url": "pengaturan/template",
+          "name": "Template Dokumen",
+          "slug": "pengaturan-template"
+        },
+        {
+          "url": "pengaturan/backup",
+          "name": "Backup & Restore",
+          "slug": "pengaturan-backup",
+          "badge": [
+            "label-danger fs-tiny",
+            "Pro"
+          ]
+        }
+      ]
+    },
+    {
+      "menuHeader": "Support & Documentation"
+    },
+    {
+      "url": "https://github.com/themeselection/materio-bootstrap-html-laravel-admin-template-free/issues",
+      "icon": "menu-icon tf-icons ri-lifebuoy-line",
+      "name": "Support",
+      "slug": "support",
+      "target": "_blank"
+    },
+    {
+      "url": "https://themeselection.com/demo/materio-bootstrap-html-admin-template/documentation/laravel-introduction.html",
+      "icon": "menu-icon tf-icons ri-article-line",
+      "name": "Documentation",
+      "slug": "documentation",
+      "target": "_blank"
+    }
+  ]
+}
