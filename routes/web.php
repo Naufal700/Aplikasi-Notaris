@@ -3,12 +3,15 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboard\Analytics;
+use App\Http\Controllers\master\StafController;
+use App\Http\Controllers\order\OrderController;
 use App\Http\Controllers\Master\KlienController;
 use App\Http\Controllers\master\KontakController;
 use App\Http\Controllers\authentications\LoginBasic;
 use App\Http\Controllers\master\JenisAktaController;
 use App\Http\Controllers\authentications\RegisterBasic;
 use App\Http\Controllers\dashboard\DashboardController;
+use App\Http\Controllers\master\TemplateDokumenController;
 use App\Http\Controllers\authentications\ForgotPasswordBasic;
 
 // ------------------------------------
@@ -73,3 +76,35 @@ Route::middleware('auth')->prefix('master')->group(function () {
 Route::resource('kontak', KontakController::class);
 // Route Jenis Akta
 Route::resource('jenis_akta', JenisAktaController::class);
+// Route Template Dokumen
+Route::resource('template_dokumen', TemplateDokumenController::class);
+// Route Staff
+Route::prefix('master')->group(function () {
+    Route::resource('staf', StafController::class)->except(['show', 'create', 'edit']);
+});
+// Route Order
+Route::prefix('orders/daftar-order')->name('daftar-order.')->group(function () {
+    Route::get('/', [OrderController::class, 'index'])->name('index'); // <<< FIXED
+    Route::post('/', [OrderController::class, 'store'])->name('store');
+    Route::put('/{id}', [OrderController::class, 'update'])->name('update');
+    Route::delete('/{id}', [OrderController::class, 'destroy'])->name('destroy');
+
+    // Export
+    Route::get('/export/pdf', [OrderController::class, 'exportPDF'])->name('exportPDF');
+    Route::get('/export/excel', [OrderController::class, 'exportExcel'])->name('exportExcel');
+});
+// Route Arsip Order
+Route::prefix('orders/arsip')->name('arsip.')->group(function () {
+    Route::get('/', [OrderController::class, 'arsipIndex'])->name('index');
+    Route::get('/export/pdf', [OrderController::class, 'arsipExportPDF'])->name('exportPDF');
+    Route::get('/export/excel', [OrderController::class, 'arsipExportExcel'])->name('exportExcel');
+});
+// Route Proses Akta
+Route::prefix('orders/proses')->name('proses.')->group(function () {
+    Route::get('/', [OrderController::class, 'prosesIndex'])->name('index');
+    Route::post('/', [OrderController::class, 'prosesStore'])->name('store');
+    Route::put('/{id}', [OrderController::class, 'prosesUpdate'])->name('update');
+    Route::put('/{id}/batal', [OrderController::class, 'prosesBatal'])->name('batal');
+});
+Route::put('/orders/{id}/kembalikan-draft', [OrderController::class, 'kembalikanDraft'])
+    ->name('order.kembalikanDraft');

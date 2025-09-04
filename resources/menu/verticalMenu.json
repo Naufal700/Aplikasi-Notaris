@@ -27,26 +27,26 @@
           "slug": "jenis_akta.index"
         },
         {
-          "url": "master-data/template",
+          "url": "master/template-dokumen",
           "name": "Template Dokumen",
-          "slug": "master-template"
+          "slug": "template_dokumen.index"
         },
         {
-          "url": "master-data/staf",
+          "url": "master/staf",
           "name": "Data Staf / Notaris",
-          "slug": "master-staf"
+          "slug": "staf.index"
         }
       ]
     },
     {
       "name": "Order / Permohonan",
       "icon": "menu-icon tf-icons ri-file-list-3-line",
-      "slug": "order",
+      "slug": "orders",
       "submenu": [
         {
-          "url": "order/list",
+          "url": "orders/daftar-order",
           "name": "Daftar Order",
-          "slug": "order-list"
+          "slug": "daftar-order.index"
         },
         {
           "url": "order/buat",
@@ -54,9 +54,9 @@
           "slug": "order-buat"
         },
         {
-          "url": "order/arsip",
+          "url": "orders/arsip",
           "name": "Arsip Order",
-          "slug": "order-arsip"
+          "slug": "arsip.index"
         }
       ]
     },
@@ -66,9 +66,9 @@
       "slug": "monitoring",
       "submenu": [
         {
-          "url": "monitoring/akta",
+          "url": "orders/proses",
           "name": "Proses Akta",
-          "slug": "monitoring-akta"
+          "slug": "proses.index"
         },
         {
           "url": "monitoring/pembayaran",
